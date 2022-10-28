@@ -41,6 +41,8 @@ var configure:Routes=[
 
 # add the bootstrap 
 --------------------------
+
+```
 <!doctype html>
 <html lang="en">
 <head>
@@ -64,3 +66,4 @@ var configure:Routes=[
 </body>
 </html>
 
+```
