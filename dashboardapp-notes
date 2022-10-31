@@ -52,3 +52,39 @@ const routes: Routes = [
 
 
 ```
+
+
+```
+
+
+guards:
+---------
+
+STEP1: CREATE THE GUARD BY USING THE FOLLOWING COMMAND:
+
+>ng g guard auth
+
+CanActivate
+CanDeactivate
+...
+
+choose the CanActivate guard
+
+STEP2: write the logic inside the AuthGuard as below
+import { Injectable } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
+ 
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private router:Router){}
+  canActivate():boolean{
+      window.alert('DO NOT HAVE ACCESS TO DASHBOARD DIRECTLY PLEASE LOGIN FIRST!');
+       this.router.navigate(['login']);
+    return true;
+  }
+  
+}
+
+```
