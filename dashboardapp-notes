@@ -90,6 +90,6 @@ export class AuthGuard implements CanActivate {
 
 ----------------------------------------------------------------------------------------------------------------
 
- 
+ https://github.com/imtiazjava/angular-notes/blob/main/guards.png?raw=true
 
 ```
